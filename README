@@ -1,0 +1,22 @@
+TOOLS:
+
+--> test_suite.py:
+    ./test_suite.py (or python2.7 test_suite.py) [folders]
+    Each folder is a categorie, must contain one file per test.
+
+Test file format:
+
+TITLE
+Example
+
+COMMAND
+diff out1 out2
+
+stderr:
+error
+
+stdout:
+everything is ok
+
+RETURN
+0

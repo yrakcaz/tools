@@ -9,9 +9,9 @@ def main():
   argv = sys.argv
   argc = len(argv)
   if argc < 2:
-    print("Use ./tests.py --help or ./tests.py -h")
+    print("Use ./test_suite.py --help or ./test_suite.py -h")
   elif argv[1] == "-h" or argv[1] == "--help":
-    print("./tests.py [categories]")
+    print("./test_suite.py [categories]")
   else:
     topdir = argv[1]
     i = 2

@@ -1,4 +1,6 @@
 TOOLS:
+=====
+
 
 --> test_suite.py:
     ./test_suite.py (or python2.7 test_suite.py) [folders]
@@ -20,3 +22,13 @@ everything is ok
 
 RETURN
 0
+
+
+--> options_manager_cpp:
+    Really simple options getter for c++, recuperate a map which, for
+    an argument give its position, 0 if it doesn't exist.
+    Usage : Args args(int argc, char** argv);
+            args.push_arg(arg1);
+            ...
+            args.compute();
+            args.map_get();

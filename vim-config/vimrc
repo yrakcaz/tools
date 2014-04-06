@@ -1,0 +1,96 @@
+" General
+" ========================================
+set nocompatible
+filetype plugin indent on
+syntax on
+set t_Co=256
+set background=dark
+colorscheme obsidian    " thème de coloration
+set mouse=a             " permet l'utilisation de la souris
+set title               " affiche le titre dans la barre de titre du term
+set number
+
+
+autocmd BufWritePre <buffer> :%s/\s\+$//e
+
+
+" Indentation
+" ========================================
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set smartindent
+set copyindent
+
+"set cino=(0,u0,U0,t0,g0,N-s,{s,>2s,^-s,n-s
+
+
+" Wrapping
+" ========================================
+"set wrap
+"set textwidth=79
+
+
+" Edition zone
+" ========================================
+set relativenumber      " active la numérotation relative
+set cursorline          " met en valeur la ligne du curseur
+set scrolloff=3
+
+" affiche les retour chariot, les espaces...
+set list
+
+
+set incsearch           " recherche incrémentale
+set showmatch
+
+
+" Status line and window bottom
+" ========================================
+set ruler
+set showcmd
+
+
+" Buffers and windows
+" ========================================
+
+" Navigation dans les buffeurs
+"map <leader>t :bp<cr>
+"map <leader>s :bn<cr>
+
+
+" History, Undo and Backup
+" ========================================
+
+"silent !mkdir -p ~/.vim/tmp/{backup,tmp}
+
+"set backup
+"set backupdir=~/.vim/tmp/backup
+"set directory=~/.vim/tmp/tmp
+
+"set undofile
+"set undodir=~/.vim/tmp/undo
+"silent !mkdir -p ~/.vim/tmp/undo
+
+
+" Plugins
+" ========================================
+call pathogen#infect()
+"imap <c-space> <c-x><c-o>
+highlight Pmenu ctermbg=238 gui=bold
+
+" Tagbar
+" ========================================
+nmap <F8> :TagbarToggle<CR>
+
+
+" NeerdTree
+" ========================================
+
+map <C-f> :NERDTreeToggle<CR>
+
+" Coding Style
+" ========================================
+highlight OverLength ctermbg=black ctermfg=white guibg=#592929
+match OverLength /\%80v.\+/

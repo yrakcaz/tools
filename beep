@@ -1,0 +1,12 @@
+#! /bin/bash
+
+case $1 in
+start)
+sudo /sbin/insmod /lib/modules/3.2.0-4-amd64/kernel/drivers/input/misc/pcspkr.ko;
+echo "beep unabled";;
+stop)
+sudo rmmod pcspkr;
+echo "beep disabled";;
+*)
+echo "usage : $0 start|stop";;
+esac

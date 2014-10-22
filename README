@@ -32,3 +32,5 @@ RETURN
             ...
             args.compute();
             args.map_get();
+
+--> beep start|stop to unable/disable system beep

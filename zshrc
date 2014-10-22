@@ -13,11 +13,14 @@ alias reboot='sudo /sbin/reboot'
 alias nrm='~/.nrm.py'
 alias rm='rm -i'
 alias qemu='qemu-i386'
+alias vo='vim -O'
 alias tree='tree -C'
 alias corewar='cd ~/Documents/ING1/corewar/ayoun_z'
 ulimit -c unlimited
 export PATH=~/llvm32build/bin:$PATH
 export PATH=~/emscripten:$PATH
+export PATH=/usr/sbin:$PATH
+alias netbeans='~/netbeans-8.0/bin/netbeans'
 alias chrome='chromium'
 alias lock='slock'
 NNTPSERVER='news.epita.fr' && export NNTPSERVER

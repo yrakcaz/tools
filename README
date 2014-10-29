@@ -34,3 +34,6 @@ RETURN
             args.map_get();
 
 --> beep start|stop to unable/disable system beep
+
+--> doc_func.py <extension>
+    Doxygen documentation for all files with <extension> in subdirectories.

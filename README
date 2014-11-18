@@ -37,3 +37,5 @@ RETURN
 
 --> doc_func.py <extension>
     Doxygen documentation for all files with <extension> in subdirectories.
+
+--> zshrc : need to have zsh and oh-my-zsh installed...

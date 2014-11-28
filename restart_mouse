@@ -1,0 +1,4 @@
+#! /bin/bash
+
+sudo rmmod psmouse
+sudo /sbin/insmod /lib/modules/3.2.0-4-amd64/kernel/drivers/input/mouse/psmouse.ko;

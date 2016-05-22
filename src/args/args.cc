@@ -1,4 +1,4 @@
-#include "../include/args.hh"
+#include "args.hh"
 
 Args::Args()
 {

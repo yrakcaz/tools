@@ -1,0 +1,8 @@
+[user]
+	email = zackaryayoun@gmail.com
+	name = Zackary Ayoun
+[core]
+	editor = vim
+[alias]
+	st = status
+	all = log --graph --oneline --decorate --all

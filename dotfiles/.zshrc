@@ -1,5 +1,7 @@
-alias gmake='make'
-alias reload='source ~/.zshrc'
+# Aliases
+
+## Git
+
 alias st='git status'
 alias add='git add'
 alias all='git log --oneline --graph --decorate --all'
@@ -7,25 +9,27 @@ alias commit='git commit'
 alias checkout='git checkout'
 alias push='git push'
 alias pull='git pull'
+alias lines="git ls-files | xargs -n1 git blame --line-porcelain | sed -n 's/^author //p' | sort -f | uniq -ic | sort -nr"
+
+## Misc
+
+alias reload='source ~/.zshrc'
 alias mg='./configure --with-debug && make'
-alias poweroff='sudo /sbin/halt'
-alias reboot='sudo /sbin/reboot'
-alias nrm='~/.nrm.py'
+alias poweroff='/sbin/halt'
+alias reboot='/sbin/reboot'
 alias rm='rm -i'
-alias qemu='qemu-i386'
 alias vo='vim -O'
 alias tree='tree -C'
-alias corewar='cd ~/Documents/ING1/corewar/ayoun_z'
+alias lock='i3lock'
+
+
+# Misc
+
 ulimit -c unlimited
-export PATH=~/llvm32build/bin:$PATH
-export PATH=~/emscripten:$PATH
-export PATH=/usr/sbin:$PATH
-alias netbeans='~/netbeans-8.0/bin/netbeans'
-alias chrome='chromium'
-alias lock='slock'
-NNTPSERVER='news.epita.fr' && export NNTPSERVER
-alias lines="git ls-files | xargs -n1 git blame --line-porcelain | sed -n 's/^author //p' | sort -f | uniq -ic | sort -nr"
-alias sshovh="ssh yrakcaz@ns464741.ip-94-23-20.eu"
+export EDITOR=vim
+
+
+# Oh-my-zsh
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -80,7 +84,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/home/yrakcaz/emscripten:/home/yrakcaz/llvm32build/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -95,5 +98,3 @@ export PATH="/home/yrakcaz/emscripten:/home/yrakcaz/llvm32build/bin:/usr/local/b
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-alias intellij='~/Téléchargements/idea-IC-135.480/bin/idea.sh'

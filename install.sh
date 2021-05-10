@@ -8,6 +8,8 @@ $MAN install sudo clang vim vim-nox ctags git tmux openbox tint2 zsh tree i3lock
 git submodule init
 git submodule update
 
+git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+
 cp -r dotfiles/.??* ~
 
 cp -r scripts/* $PREFIX/bin

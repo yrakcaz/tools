@@ -31,6 +31,7 @@ alias connect='mosh zac@us229'
 
 ulimit -c unlimited
 bindkey -e emacs
+bindkey \^U backward-kill-line
 export EDITOR=vim
 export PATH=/Library/TeX/texbin/:$PATH
 export PATH=/usr/local/opt/tcl-tk/bin:$PATH

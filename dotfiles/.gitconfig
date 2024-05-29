@@ -6,3 +6,5 @@
 [alias]
 	st = status
 	all = log --graph --oneline --decorate --all
+[init]
+	defaultBranch = main
